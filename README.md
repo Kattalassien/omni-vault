@@ -11,6 +11,7 @@ Master documentation vault for Preston's projects. Plain Markdown, Obsidian-comp
 | 04-IPHONE | Obsidian shortcuts-only setup, listing iPhone apps, capture Shortcuts |
 | 05-CONNECTORS | Which connectors to enable and what each one owns |
 | 06-PROMPTS | Master prompt, Copilot foundation prompt, Claude prompt, continuation prompt |
+| 07-COST | Token and credit saving playbook, routing table (Computer vs Gemini/OpenRouter vs Copilot) |
 | 99-LOG | CHANGELOG (append only) |
 
 Rules: no secrets in this repo (names only, e.g. OPENROUTER_API_KEY). No invented facts: use TODO. Frontmatter on new notes: id, type, project, status, updated.

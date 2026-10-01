@@ -1,5 +1,9 @@
 # Vault Changelog (append only, newest first)
 
+## 2026-10-01 (cost review)
+- Added 07-COST/TOKEN-SAVING-PLAYBOOK.md: 20 methods from Reddit and GitHub, routing table, adopted rules.
+- Project instructions: added handoff rule (about 10 messages or an hour).
+
 ## 2026-10-01 (later)
 - Portal MVP built, QA-verified on live Supabase, pushed to Kattalassien/omnitask-portal; preview deployed.
 - Docs PRs opened in omnitask-mobile (#10), llm-knowledge-base (#6), cjg-chaosjimgen (#3), emerald-companion (#1), pokemon-unbound-mod-workspace (#2). Nothing merged.
