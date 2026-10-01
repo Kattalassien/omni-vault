@@ -1,0 +1,7 @@
+# Vault Changelog (append only, newest first)
+
+## 2026-10-01
+- Created omni-vault: master plan, outsource board (38 work packages), file digest, iPhone guides, connector guide, project index, prompts.
+- Reorganized Perplexity Projects (renamed 3, created 2, moved website thread, rewrote OmniTask Mobile instructions).
+- Verified Google Photos connector sees only app-created media (empty list).
+- Left out a private personal reminder from the digest.

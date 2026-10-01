@@ -1,0 +1,344 @@
+[
+  {
+    "id": "A1",
+    "workstream": "A",
+    "title": "Merge PR #8 then #9 (after reading checks) ",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "Both merged on GitHub mobile",
+    "size": "XS"
+  },
+  {
+    "id": "A2",
+    "workstream": "A",
+    "title": "P0-6 protect main: require CI checks",
+    "owner": "Human",
+    "depends": "A1",
+    "acceptance": "Branch rule active",
+    "size": "XS"
+  },
+  {
+    "id": "A3",
+    "workstream": "A",
+    "title": "Decide hosting: Cloudflare Pages free (keeps repo private) vs public repo for GitHub Pages; review BRAIN.md first",
+    "owner": "Human",
+    "depends": "A1",
+    "acceptance": "Decision recorded in ADR",
+    "size": "S"
+  },
+  {
+    "id": "A4",
+    "workstream": "A",
+    "title": "Remove cr-gpt app spam (Settings > Applications)",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "No more OPENAI_API_KEY comments",
+    "size": "XS"
+  },
+  {
+    "id": "A5",
+    "workstream": "A",
+    "title": "P1-2 Dexie boot loading states",
+    "owner": "Copilot",
+    "depends": "A1",
+    "acceptance": "Spinner/skeleton while Dexie loads; smoke test added; build green",
+    "size": "S"
+  },
+  {
+    "id": "A6",
+    "workstream": "A",
+    "title": "P1-3 service worker update prompt",
+    "owner": "Copilot",
+    "depends": "A5",
+    "acceptance": "Toast when new version waits; test",
+    "size": "S"
+  },
+  {
+    "id": "A7",
+    "workstream": "A",
+    "title": "P1-1 iPhone PWA manual smoke checklist (docs/testing.md)",
+    "owner": "Claude",
+    "depends": "",
+    "acceptance": "Checklist covers install, offline, notes, export",
+    "size": "S"
+  },
+  {
+    "id": "A8",
+    "workstream": "A",
+    "title": "P2-1 strict CSP",
+    "owner": "Copilot",
+    "depends": "A5",
+    "acceptance": "CSP meta, app works, smoke green",
+    "size": "S"
+  },
+  {
+    "id": "A9",
+    "workstream": "A",
+    "title": "P2-5 ESLint + Prettier + CI lint",
+    "owner": "Copilot",
+    "depends": "A5",
+    "acceptance": "CI lint job passes",
+    "size": "S"
+  },
+  {
+    "id": "A10",
+    "workstream": "A",
+    "title": "P2-2 axe-core + Lighthouse CI",
+    "owner": "Copilot",
+    "depends": "A8",
+    "acceptance": "a11y/PWA budgets in CI",
+    "size": "M"
+  },
+  {
+    "id": "A11",
+    "workstream": "A",
+    "title": "P2-4 Vite 8 upgrade (clears esbuild advisory)",
+    "owner": "Copilot",
+    "depends": "A9",
+    "acceptance": "npm audit clean or documented",
+    "size": "M"
+  },
+  {
+    "id": "A12",
+    "workstream": "A",
+    "title": "DOC-1 and DOC-2 stale-doc fixes",
+    "owner": "Copilot",
+    "depends": "A1",
+    "acceptance": "QUICKSTART + package.json honest",
+    "size": "XS"
+  },
+  {
+    "id": "B1",
+    "workstream": "B",
+    "title": "Finish portal frontend pages (Database, Roadmap, Jobs, Config, Assistant) + CSS",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Build green, smoke green, QA login works",
+    "size": "M"
+  },
+  {
+    "id": "B2",
+    "workstream": "B",
+    "title": "Supabase Auth: set Site URL and add {{ .Token }} to Magic Link template",
+    "owner": "Human",
+    "depends": "B1",
+    "acceptance": "Email sign-in works from iPhone",
+    "size": "XS"
+  },
+  {
+    "id": "B3",
+    "workstream": "B",
+    "title": "Set OPENROUTER_API_KEY in Supabase Edge Function secrets",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "Assistant tab answers",
+    "size": "XS"
+  },
+  {
+    "id": "B4",
+    "workstream": "B",
+    "title": "Host portal free on Cloudflare Pages (connect repo, build npm run build, output dist)",
+    "owner": "Human",
+    "depends": "B1",
+    "acceptance": "Permanent URL stored in Config",
+    "size": "S"
+  },
+  {
+    "id": "B5",
+    "workstream": "B",
+    "title": "Add GitHub webhook(s) pointing at portal webhook with secret from Webhooks tab",
+    "owner": "Human",
+    "depends": "B2",
+    "acceptance": "Events appear in inbox",
+    "size": "XS"
+  },
+  {
+    "id": "B6",
+    "workstream": "B",
+    "title": "capture Edge Function: POST note -> knowledge inbox + commit to omni-vault 00-INBOX",
+    "owner": "Copilot",
+    "depends": "B1",
+    "acceptance": "Shortcut capture lands in repo and DB",
+    "size": "M"
+  },
+  {
+    "id": "B7",
+    "workstream": "B",
+    "title": "PC runner script (Node, outbound polling of jobs table)",
+    "owner": "Copilot",
+    "depends": "B1",
+    "acceptance": "Job created in portal runs on PC and reports result",
+    "size": "M"
+  },
+  {
+    "id": "B8",
+    "workstream": "B",
+    "title": "Notion + Todoist sync functions (roadmap_items <-> Notion DB / Todoist)",
+    "owner": "Claude",
+    "depends": "B1",
+    "acceptance": "Two-way sync documented and tested",
+    "size": "L"
+  },
+  {
+    "id": "C1",
+    "workstream": "C",
+    "title": "Vault repo omni-vault created, digest + plan committed",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Repo exists, README, digest",
+    "size": "S"
+  },
+  {
+    "id": "C2",
+    "workstream": "C",
+    "title": "Obsidian launcher setup on iPhone (shortcuts only)",
+    "owner": "Human",
+    "depends": "C1",
+    "acceptance": "Shortcut opens launcher note",
+    "size": "XS"
+  },
+  {
+    "id": "C3",
+    "workstream": "C",
+    "title": "iPhone capture Shortcuts: quick note, link, photo note -> portal webhook",
+    "owner": "Human",
+    "depends": "B2",
+    "acceptance": "Three Shortcuts installed",
+    "size": "S"
+  },
+  {
+    "id": "C4",
+    "workstream": "C",
+    "title": "Knowledge schema migration (items, chunks, edges, pgvector, FTS, RLS)",
+    "owner": "Claude",
+    "depends": "B1",
+    "acceptance": "Migration applies; RLS tests pass",
+    "size": "L"
+  },
+  {
+    "id": "C5",
+    "workstream": "C",
+    "title": "Gate A: read-only inventory of GitHub, Drive, Notion, Todoist, Supabase, Photos",
+    "owner": "Computer",
+    "depends": "C1",
+    "acceptance": "Inventory CSV in vault; no changes made",
+    "size": "M"
+  },
+  {
+    "id": "C6",
+    "workstream": "C",
+    "title": "Stay userscript + Scriptable router (private Safari capture)",
+    "owner": "Claude",
+    "depends": "C4",
+    "acceptance": "Scripts committed with README",
+    "size": "M"
+  },
+  {
+    "id": "D1",
+    "workstream": "D",
+    "title": "Rate the 120 yungfloop drafts (keep/post)",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "Ratings stored",
+    "size": "S"
+  },
+  {
+    "id": "D2",
+    "workstream": "D",
+    "title": "Approve or decline paid Apify run for bugsquelcher sample",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "Decision recorded",
+    "size": "XS"
+  },
+  {
+    "id": "E1",
+    "workstream": "E",
+    "title": "Create manga-memory-pipeline repo (name your choice) and run checkpoint prompt",
+    "owner": "Human",
+    "depends": "",
+    "acceptance": "Repo exists",
+    "size": "XS"
+  },
+  {
+    "id": "E2",
+    "workstream": "E",
+    "title": "Checkpoints 1-5 of manga pipeline",
+    "owner": "Copilot",
+    "depends": "E1",
+    "acceptance": "One PR per checkpoint",
+    "size": "L"
+  },
+  {
+    "id": "F1",
+    "workstream": "F",
+    "title": "iOS-only guides: Renegade Platinum patch+play, fusion games, Moon Black 2, other fan games",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Guide in vault, sources cited",
+    "size": "M"
+  },
+  {
+    "id": "F2",
+    "workstream": "F",
+    "title": "emerald-companion and pokemon-unbound-mod-workspace: README, CHANGELOG, ROADMAP",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Docs PRs open",
+    "size": "S"
+  },
+  {
+    "id": "G1",
+    "workstream": "G",
+    "title": "Step 2 Greenhouse + Lever discovery/submitter",
+    "owner": "Copilot",
+    "depends": "",
+    "acceptance": "Acceptance tests in plan pass",
+    "size": "L"
+  },
+  {
+    "id": "G2",
+    "workstream": "G",
+    "title": "Oracle Always-Free deploy (Step 3)",
+    "owner": "Human",
+    "depends": "G1",
+    "acceptance": "Health endpoint 200",
+    "size": "M"
+  },
+  {
+    "id": "J1",
+    "workstream": "J",
+    "title": "Beans and Roots plan + mock preview; Jim approval gate",
+    "owner": "Claude",
+    "depends": "",
+    "acceptance": "Mock preview shared; no live change",
+    "size": "M"
+  },
+  {
+    "id": "L1",
+    "workstream": "L",
+    "title": "Todoist project 'OmniTask Portal' from this board",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Tasks created",
+    "size": "S"
+  },
+  {
+    "id": "L2",
+    "workstream": "L",
+    "title": "Drive backup folder with all text/markdown files",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "Folder link",
+    "size": "S"
+  },
+  {
+    "id": "L3",
+    "workstream": "L",
+    "title": "Changelog + continuation prompt updated after every message",
+    "owner": "Computer",
+    "depends": "",
+    "acceptance": "99-LOG/CHANGELOG.md current",
+    "size": "XS"
+  }
+]
