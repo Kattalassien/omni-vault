@@ -29,9 +29,26 @@ Nothing was deleted.
 | emerald-companion | Pokemon Emerald Rogue companion (mGBA bridge, relay, web app) | README | TODO docs |
 | pokemon-unbound-mod-workspace | Unbound mod workspace | README | PR #1 open |
 | job-automation-suite (private) | Job-application automation | docs/ (plan attached) | Step 1 done |
+| pokerogue-mods (private) | PokeRogue mod menu + iPhone modding workspace (Mod Menu+ userscript, offline client plan) | TODO | Not yet reviewed; Todoist project "PokeRogue Mods" exists |
 | personal-cloud-router (public) | Older | | Leave |
 
 ## Hosting and environments
 - Dev: CloudCLI at https://omnitask.cloudcli.ai (domain is cloudcli.ai; was HTTP 502 = container not running).
 - PC: remote desktop link [INSERT in portal Config pc_remote_desktop_url].
 - Portal DB: Supabase project zlxtnknbblgqhdsynjco (free).
+
+## Open PRs created or touched 2026-10-01 (none merged)
+- omnitask-mobile: #8, #9, #10 (portal companion docs, base chore/project-memory)
+- llm-knowledge-base: #6 (docs), existing draft #5
+- cjg-chaosjimgen: #3 (docs), existing #2 (experiment)
+- emerald-companion: #1 (docs)
+- pokemon-unbound-mod-workspace: #2 (docs), existing draft #1
+
+## Todoist
+Board "Knowledge OS" now has sections Needs you (Human), Copilot, Claude, Computer (34 tasks). The free plan project limit blocked a new project.
+
+## Drive
+Folder "OmniTask Backup 2026-10-01" (35 Markdown/JSON files).
+
+## Repo metadata updated
+omnitask-mobile description corrected (removed stale Replit/sync claims); descriptions added for cjg-chaosjimgen and job-automation-suite.
