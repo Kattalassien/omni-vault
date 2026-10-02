@@ -15,3 +15,4 @@
 - Reorganized Perplexity Projects (renamed 3, created 2, moved website thread, rewrote OmniTask Mobile instructions).
 - Verified Google Photos connector sees only app-created media (empty list).
 - Left out a private personal reminder from the digest.
+- Created steamdeck-ops repo (PR #1 script+CI, PR #2 runbook); portal SD-1..SD-8 rows; mobile docs/steam-deck.md PR; Notion/Todoist/Drive mirrors.

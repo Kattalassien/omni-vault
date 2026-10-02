@@ -52,3 +52,8 @@ Folder "OmniTask Backup 2026-10-01" (35 Markdown/JSON files).
 
 ## Repo metadata updated
 omnitask-mobile description corrected (removed stale Replit/sync claims); descriptions added for cjg-chaosjimgen and job-automation-suite.
+
+## steamdeck-ops (added 2026-10-01)
+- Repo: https://github.com/Kattalassien/steamdeck-ops (private) — `deckops.sh` + `docs/RUNBOOK.md`
+- Scope: backup-first SteamOS/Flatpak updates, Repair/Re-image restore, EmuDeck custom layout, Syncthing <-> iPhone (Möbius Sync), chained admin commands
+- Portal: project `steamdeck-ops`, roadmap SD-1..SD-8, webhook source `steamdeck`
