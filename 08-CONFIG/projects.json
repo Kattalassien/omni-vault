@@ -88,8 +88,8 @@
     },
     {
       "slug": "llm-knowledge-base",
-      "name": "LLM Knowledge Base",
-      "repo": "Kattalassien/llm-knowledge-base",
+      "name": "LLM Knowledge Base (omnitool-knowledge)",
+      "repo": "Kattalassien/omnitool-knowledge",
       "type": "docs",
       "role": "reference",
       "status": "active",
@@ -103,7 +103,12 @@
         "section": "LLM Knowledge Base",
         "section_id": "6hgm655G8MpjMqrj"
       },
-      "cloudinary_card": "https://res.cloudinary.com/sewoj1wp/image/upload/l_text:DejaVu%20Sans_64_bold:LLM%20Knowledge%20Base,co_rgb:BB86FC,g_west,x_80,y_-40/l_text:Arial_34:llm-knowledge-base%20%C2%B7%20docs,co_rgb:03DAC6,g_west,x_80,y_50/f_auto,q_auto/omni-hub/base/card-base.png"
+      "cloudinary_card": "https://res.cloudinary.com/sewoj1wp/image/upload/l_text:DejaVu%20Sans_64_bold:LLM%20Knowledge%20Base,co_rgb:BB86FC,g_west,x_80,y_-40/l_text:Arial_34:llm-knowledge-base%20%C2%B7%20docs,co_rgb:03DAC6,g_west,x_80,y_50/f_auto,q_auto/omni-hub/base/card-base.png",
+      "dir": "omnitool-knowledge",
+      "former_names": [
+        "llm-knowledge-base"
+      ],
+      "slug_note": "Slug kept as llm-knowledge-base so existing Supabase, Todoist and Drive records stay linked. The repo was renamed on 2026-10-04."
     },
     {
       "slug": "job-automation-suite",

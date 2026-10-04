@@ -13,8 +13,8 @@ Shared capabilities. When one project builds one of these, others reuse it inste
 | AI code review (OpenRouter free, severity tags) | omnitask-mobile `scripts/code-review.mjs` | any repo PR workflow |
 | Ratings kept separate from model scores | cjg-chaosjimgen | OmniTask review surface |
 | Apify ingest with provenance | cjg-chaosjimgen `scripts/ingest-apify.ts` | deal tracker (approval-gated) |
-| Agent registry with retry and priority queues | llm-knowledge-base `config/agents.json` | omni automations retry policy |
-| Signed webhooks (HMAC-SHA256, backoff) | llm-knowledge-base `config/webhooks.json` | portal `webhook_events` |
+| Agent registry with retry and priority queues | omnitool-knowledge `config/agents.json` | omni automations retry policy |
+| Signed webhooks (HMAC-SHA256, backoff) | omnitool-knowledge `config/webhooks.json` | portal `webhook_events` |
 | Hard-boundary brain with a version header | consent-first-ai-lab `brain.md` | BRAIN-CORE versioned block |
 | Userscript mod menus | pokerogue-mods | Brain Bot capture, Stay scripts |
 | Hub sync (managed blocks, harvest, mirrors) | omni-vault `scripts/omnisync.py` | every repo |

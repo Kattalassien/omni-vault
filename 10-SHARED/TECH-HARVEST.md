@@ -24,7 +24,7 @@
 | consent-first-ai-lab | 1 skills/ folders with SKILL.md | `omni-vault/skills/` |
 | | 2 Versioned hard-boundary brain | `omni:begin core v1` markers |
 | | 3 reviews/ baseline before change | standards_audit baseline |
-| llm-knowledge-base | 1 agents.json retry policy and priority queues | automations retry once, then log |
+| omnitool-knowledge (was llm-knowledge-base) | 1 agents.json retry policy and priority queues | automations retry once, then log |
 | | 2 HMAC-signed webhooks with backoff | future portal ingest of sync runs |
 | | 3 tools/*.md per AI tool | PERPLEXITY-PLAYBOOK.md |
 | omni-vault | 1 work-packages.json (owner, depends, acceptance) | Todoist task description fields |

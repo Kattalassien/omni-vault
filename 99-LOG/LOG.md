@@ -28,3 +28,4 @@ Format: `YYYY-MM-DD HH:MM ET | actor | action | result`
 - 03:57 | Computer | Perplexity automations: Omni knowledge sync (Sun 20:00), Omni roadmap to Todoist (weekdays 07:30, light), Omni standards audit (1st 08:00, light) | Active
 - 03:58 | Computer | Perplexity skills saved to My Skills: connector-router, omni-hub-sync | Done
 - 03:58 | Computer | CloudConvert: no job run (cost rule: ask first); recipe in skills/connector-router/references/recipes.md | Skipped
+- 09:30 | Computer | Rebased PR #3 onto main after #2 was squash-merged; retargeted base to main; llm-knowledge-base repo renamed to omnitool-knowledge in projects.json (slug kept) | Done
