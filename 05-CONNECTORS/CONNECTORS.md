@@ -1,7 +1,7 @@
 ---
 id: connectors
 type: guide
-updated: 2026-10-01
+updated: 2026-10-04
 ---
 # Connectors: what is set up, what to add
 
@@ -31,3 +31,20 @@ Sources: [Perplexity connectors](https://www.perplexity.ai/computer/connectors),
 
 ## Popular MCP servers worth knowing
 GitHub's official MCP server is the top GitHub-related server by stars ([Glama, Sept 2026](https://glama.ai/mcp/best/github)). Playwright and GitHub lead overall adoption ([MCP leaderboard](https://awesomeagents.ai/leaderboards/mcp-server-ecosystem-leaderboard/)). A community Google Photos MCP exists ([thenavidm](https://github.com/thenavidm/google-photos-mcp-cli)) but is bound by the same API limits.
+
+## Health check 2026-10-04
+| Connector | Status | Finding |
+|---|---|---|
+| GitHub | OK | 50+ repos; omni-vault PR for this pass |
+| Google Drive | OK | Duplicates and a security-risk file at root (see 09-MASTER-PLANS/MASTER-MERGE-PLAN.md) |
+| Gmail + Calendar | OK | Steam accounts YungFloop, ChaosJim, lpmcgee found in mail; next event Oct 11 |
+| Notion | OK | Hub page "Preston Master Automation & Knowledge OS" plus Steam Deck Ops page |
+| Todoist | OK | Knowledge OS board, 4 owner sections |
+| Supabase | OK | omnitask-portal healthy, 3 advisor findings; Main Chaos Project inactive |
+| Sentry | OK | Org chaosinc, 0 projects |
+| Jam | OK | 0 recordings |
+| Cloudinary | OK | Free plan, 65 assets, 0.68% credits |
+| Context7 | OK | Test lookup (Phaser) returned /phaserjs/phaser |
+| Apify, CloudConvert, Leonardo AI | OK | Not run (cost credits) |
+| Google Photos | Limited | Only app-created media visible |
+| PlayStation | None | No connector or public API; use PSN ID + PSNProfiles |
