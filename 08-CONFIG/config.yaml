@@ -1,0 +1,47 @@
+# omni-vault config (non-secret). Secrets live only in password manager / Supabase secrets.
+# Read by Computer automations and Copilot. Edit on GitHub mobile; PR not required for this file.
+updated: 2026-10-04
+
+owner:
+  github: Kattalassien
+  timezone: America/New_York
+
+automations:
+  daily_gaming_digest:
+    id: b82806e0-7e4a-49b6-b7a5-618a184e9c5b
+    schedule: "Daily 09:00 America/New_York"
+    delivers_to: "Perplexity thread d0633540 (push notification)"
+    sections: [bg3, elden_ring_dark_souls, pokemon_rom_hacks, extra_games]
+
+gaming:
+  steam:
+    main_profile: https://steamcommunity.com/id/yungfloop
+    steamid64: "76561198011626659"
+    game_details_public: false   # flip to true after Steam > Privacy > Game details = Public
+    other_accounts: [ChaosJim, lpmcgee]
+  psn:
+    online_id: TODO              # add your PSN ID, then make it public on psnprofiles.com
+  # Extra games: up to 10. The digest reads this list. Add or remove freely.
+  extra_games:
+    - Bloodborne (PS5)
+    - Resident Evil Village (PS5)
+    - RimWorld (PC modding)
+    - Steam Deck emulation (EmuDeck, Decky)
+
+connectors:   # status from health check 2026-10-04
+  github: {status: ok, via: gh CLI, role: code and docs, rule: never merge}
+  google_drive: {status: ok, via: gws CLI, role: file archive and backups}
+  gmail_calendar: {status: ok, role: receipts, alerts, schedule}
+  notion: {status: ok, role: visual hub, root_page: "Preston Master Automation & Knowledge OS"}
+  todoist: {status: ok, role: tasks, board: "Knowledge OS", sections: [Needs you, Computer, Copilot, Claude]}
+  supabase: {status: ok, projects: {omnitask-portal: active, main-chaos-project: inactive}, open_advisors: 3}
+  sentry: {status: ok, org: chaosinc, projects: 0}
+  jam: {status: ok, jams: 0}
+  cloudinary: {status: ok, plan: free, assets: 65, credits_used_pct: 0.68}
+  context7: {status: ok, role: live library docs before coding}
+  apify: {status: ok, rule: paid runs need approval}
+  cloud_convert: {status: ok, rule: conversion minutes are limited; batch jobs}
+  leonardo_ai: {status: ok, rule: generations cost credits; ask first}
+  google_photos: {status: limited, note: "API only sees app-created media since 2025"}
+
+docs_standard: [BRAIN.md, ROADMAP.md, CHANGELOG.md, PLANNEDFEATURES.md, CONTINUE.md]

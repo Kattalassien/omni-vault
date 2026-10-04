@@ -1,5 +1,12 @@
 # Vault Changelog (append only, newest first)
 
+## 2026-10-04 (admin pass)
+- Added BRAIN.md (canonical shared memory, with how-to-use notes), 01-ROADMAP/ROADMAP.md (one-screen view), 08-CONFIG/config.yaml (non-secret IDs, extra games list, connector status), 99-LOG/LOG.md (operations log).
+- Added 09-MASTER-PLANS: MIND-MAP.md, SCHEDULE.md, MASTER-MERGE-PLAN.md (plan 1), TOOL-MASTERY-PLAN.md (plan 2).
+- Connector health check recorded in 05-CONNECTORS/CONNECTORS.md.
+- Daily Gaming Digest replaces four twice-weekly digests.
+- Drive BRAIN.md copies (2) now point to the vault copy.
+
 ## 2026-10-01 (cost review)
 - Added 07-COST/TOKEN-SAVING-PLAYBOOK.md: 20 methods from Reddit and GitHub, routing table, adopted rules.
 - Project instructions: added handoff rule (about 10 messages or an hour).

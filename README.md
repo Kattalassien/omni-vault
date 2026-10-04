@@ -1,5 +1,7 @@
 # omni-vault
 
+Start here: BRAIN.md (memory), 01-ROADMAP/ROADMAP.md (next steps), 08-CONFIG/config.yaml (settings).
+
 Master documentation vault for Preston's projects. Plain Markdown, Obsidian-compatible, canonical memory. Private repo.
 
 | Folder | What lives here |
@@ -12,7 +14,9 @@ Master documentation vault for Preston's projects. Plain Markdown, Obsidian-comp
 | 05-CONNECTORS | Which connectors to enable and what each one owns |
 | 06-PROMPTS | Master prompt, Copilot foundation prompt, Claude prompt, continuation prompt |
 | 07-COST | Token and credit saving playbook, routing table (Computer vs Gemini/OpenRouter vs Copilot) |
-| 99-LOG | CHANGELOG (append only) |
+| 08-CONFIG | config.yaml: non-secret IDs, extra games, connector status |
+| 09-MASTER-PLANS | Mind map, schedule, merge plan, tool mastery plan |
+| 99-LOG | CHANGELOG (what changed) and LOG (what ran) |
 
 Rules: no secrets in this repo (names only, e.g. OPENROUTER_API_KEY). No invented facts: use TODO. Frontmatter on new notes: id, type, project, status, updated.
 Open this repo in Obsidian only on a PC. On iPhone, Obsidian is a launcher (see 04-IPHONE/OBSIDIAN-SHORTCUTS-ONLY.md).
