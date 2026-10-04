@@ -1,0 +1,26 @@
+name: hub-check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (stdlib only)
+        run: python -m unittest discover -s tests -v
+      - name: Config files are valid JSON
+        run: |
+          python -c "import json; [json.load(open(f)) for f in ('08-CONFIG/projects.json','08-CONFIG/automations.json')]"
+      - name: Skills have frontmatter
+        run: |
+          for f in skills/*/SKILL.md; do head -1 "$f" | grep -qx -- '---' || { echo "bad frontmatter: $f"; exit 1; }; done
+      - name: No secrets in tracked text
+        run: |
+          ! git grep -nE '(sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY)' -- . ':!tests/*'

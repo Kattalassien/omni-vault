@@ -33,3 +33,13 @@ The full list of asks and workstreams is in MASTER-PLAN.md; tasks with owners ar
 ## Workstream added 2026-10-04
 ### M Media and Game Lab: Daily Gaming Digest
 Live. One daily report: BG3 (PS5 console mods first), Elden Ring and Dark Souls, Pokémon and ROM hacks, and up to 10 extra games read from config.yaml plus Steam recently played (once public).
+
+## Hub sync track (added 2026-10-04)
+| Ref | Item | Status | Owner |
+|---|---|---|---|
+| HUB-1 | Review and merge the omni-hub-sync PR (10-SHARED, omnisync.py, skills, automations config) | todo | Human |
+| HUB-2 | Review the quick-console pilot PR (shared blocks + AGENTS.md) | todo | Human |
+| HUB-3 | Roll shared blocks into the remaining repos (weekly sync opens up to 5 PRs per run) | todo | Computer |
+| HUB-4 | Add the five operating docs to repos that are missing them (see `omnisync.py check`) | todo | Copilot |
+| HUB-5 | Portal "Knowledge" tab that reads kb_docs and kb_project_summary | todo | Copilot |
+| HUB-6 | Decide on a Todoist Pro upgrade (switches folders from sections to real projects; mode in automations.json) | todo | Human |

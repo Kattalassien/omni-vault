@@ -1,0 +1,346 @@
+{
+  "generated": "2026-10-04T07:50Z",
+  "projects": {
+    "omnitask-portal": [
+      {
+        "key": "omnitask-portal:OP-30",
+        "project": "omnitask-portal",
+        "ref": "OP-30",
+        "phase": "5",
+        "title": "Long-term hosting research: Cloudflare, GitHub Pages, Netlify, Vercel, Supabase, AWS, self-host (docs/HOSTING.md)",
+        "status": "in progress",
+        "owner": "Computer",
+        "open": true,
+        "source": "roadmap"
+      },
+      {
+        "key": "omnitask-portal:PT-3",
+        "project": "omnitask-portal",
+        "ref": "PT-3",
+        "phase": "0",
+        "title": "Repo, docs, rules, CI",
+        "status": "in progress",
+        "owner": "Computer",
+        "open": true,
+        "source": "roadmap"
+      },
+      {
+        "key": "omnitask-portal:PT-12",
+        "project": "omnitask-portal",
+        "ref": "PT-12",
+        "phase": "3",
+        "title": "PC runner (superseded by OP-10..13)",
+        "status": "in progress",
+        "owner": "Copilot",
+        "open": true,
+        "source": "roadmap"
+      }
+    ],
+    "omnitask-mobile": [
+      {
+        "key": "omnitask-mobile:DOC-1",
+        "project": "omnitask-mobile",
+        "ref": "DOC-1",
+        "phase": "P1 Core workflow",
+        "title": "Correct stale QUICKSTARTGUIDE claims (reviewer paused-mode wording, hosting status)",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "omnitask-mobile:P1-1",
+        "project": "omnitask-mobile",
+        "ref": "P1-1",
+        "phase": "P1 Core workflow",
+        "title": "Manual iPhone PWA smoke checklist (docs/testing.md)",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "omnitask-mobile:P1-2",
+        "project": "omnitask-mobile",
+        "ref": "P1-2",
+        "phase": "P1 Core workflow",
+        "title": "Loading states for async Dexie boot (Suspense/spinner)",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "quick-console": [
+      {
+        "key": "quick-console:P7",
+        "project": "quick-console",
+        "ref": "P7",
+        "phase": "7",
+        "title": "Validate on real Windows 10 and 11 machines; tune the defaults",
+        "status": "next",
+        "owner": "",
+        "open": true,
+        "source": "roadmap"
+      },
+      {
+        "key": "quick-console:67c73486",
+        "project": "quick-console",
+        "ref": "",
+        "phase": "",
+        "title": "`qc space -Duplicates`: find duplicate ISOs, archives, and installers by hash",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "checklist"
+      },
+      {
+        "key": "quick-console:cc67dcda",
+        "project": "quick-console",
+        "ref": "",
+        "phase": "",
+        "title": "`qc clean -Target Downloads -OlderThan 90`: interactive picker for review-tier items (Out-GridView, or a console picker)",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "checklist"
+      }
+    ],
+    "omni-vault": [
+      {
+        "key": "omni-vault:C2",
+        "project": "omni-vault",
+        "ref": "C2",
+        "phase": "WS C",
+        "title": "Obsidian launcher setup on iPhone (shortcuts only)",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "omni-vault:C3",
+        "project": "omni-vault",
+        "ref": "C3",
+        "phase": "WS C",
+        "title": "iPhone capture Shortcuts: quick note, link, photo note -> portal webhook",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "omni-vault:C4",
+        "project": "omni-vault",
+        "ref": "C4",
+        "phase": "WS C",
+        "title": "Knowledge schema migration (items, chunks, edges, pgvector, FTS, RLS)",
+        "status": "todo",
+        "owner": "Claude",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "llm-knowledge-base": [],
+    "job-automation-suite": [
+      {
+        "key": "job-automation-suite:G1",
+        "project": "job-automation-suite",
+        "ref": "G1",
+        "phase": "WS G",
+        "title": "Step 2 Greenhouse + Lever discovery/submitter",
+        "status": "todo",
+        "owner": "Copilot",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "job-automation-suite:G2",
+        "project": "job-automation-suite",
+        "ref": "G2",
+        "phase": "WS G",
+        "title": "Oracle Always-Free deploy (Step 3)",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "cjg-chaosjimgen": [
+      {
+        "key": "cjg-chaosjimgen:D1",
+        "project": "cjg-chaosjimgen",
+        "ref": "D1",
+        "phase": "WS D",
+        "title": "Rate the 120 yungfloop drafts (keep/post)",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "cjg-chaosjimgen:D2",
+        "project": "cjg-chaosjimgen",
+        "ref": "D2",
+        "phase": "WS D",
+        "title": "Approve or decline paid Apify run for bugsquelcher sample",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "pokerogue-mods": [],
+    "emerald-companion": [],
+    "pokemon-unbound-mod-workspace": [
+      {
+        "key": "pokemon-unbound-mod-workspace:F1",
+        "project": "pokemon-unbound-mod-workspace",
+        "ref": "F1",
+        "phase": "WS F",
+        "title": "iOS-only guides: Renegade Platinum patch+play, fusion games, Moon Black 2, other fan games",
+        "status": "todo",
+        "owner": "Computer",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "pokemon-unbound-mod-workspace:F2",
+        "project": "pokemon-unbound-mod-workspace",
+        "ref": "F2",
+        "phase": "WS F",
+        "title": "emerald-companion and pokemon-unbound-mod-workspace: README, CHANGELOG, ROADMAP",
+        "status": "todo",
+        "owner": "Computer",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "manga-memory-pipeline": [
+      {
+        "key": "manga-memory-pipeline:E1",
+        "project": "manga-memory-pipeline",
+        "ref": "E1",
+        "phase": "WS E",
+        "title": "Create manga-memory-pipeline repo (name your choice) and run checkpoint prompt",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "manga-memory-pipeline:E2",
+        "project": "manga-memory-pipeline",
+        "ref": "E2",
+        "phase": "WS E",
+        "title": "Checkpoints 1-5 of manga pipeline",
+        "status": "todo",
+        "owner": "Copilot",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "beans-and-roots-website": [
+      {
+        "key": "beans-and-roots-website:J1",
+        "project": "beans-and-roots-website",
+        "ref": "J1",
+        "phase": "WS J",
+        "title": "Beans and Roots plan + mock preview; Jim approval gate",
+        "status": "todo",
+        "owner": "Claude",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "steamdeck-ops": [
+      {
+        "key": "steamdeck-ops:SD-3",
+        "project": "steamdeck-ops",
+        "ref": "SD-3",
+        "phase": "WS SD",
+        "title": "First real run on Deck: passwd, doctor, --dry-run all, backup to SD/USB",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "steamdeck-ops:SD-4",
+        "project": "steamdeck-ops",
+        "ref": "SD-4",
+        "phase": "WS SD",
+        "title": "EmuDeck Custom Mode install to SD + custom Library layout + SRM parse",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      },
+      {
+        "key": "steamdeck-ops:SD-5",
+        "project": "steamdeck-ops",
+        "ref": "SD-5",
+        "phase": "WS SD",
+        "title": "Syncthing pairing with iPhone via Mobius Sync; RetroArch saves round-trip test",
+        "status": "todo",
+        "owner": "Human",
+        "open": true,
+        "source": "supabase",
+        "priority": "P1"
+      }
+    ],
+    "consent-first-ai-lab": [
+      {
+        "key": "consent-first-ai-lab:6a55173b",
+        "project": "consent-first-ai-lab",
+        "ref": "",
+        "phase": "",
+        "title": "Create a written Rules of Engagement template and populate it for the first owned/lab target.",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "checklist"
+      },
+      {
+        "key": "consent-first-ai-lab:5dbbd8d9",
+        "project": "consent-first-ai-lab",
+        "ref": "",
+        "phase": "",
+        "title": "Choose one upstream: Ollama/LM Studio/vLLM locally, or OpenRouter with a budget-limited key.",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "checklist"
+      },
+      {
+        "key": "consent-first-ai-lab:2aedd82a",
+        "project": "consent-first-ai-lab",
+        "ref": "",
+        "phase": "",
+        "title": "Add model discovery and health checks to the gateway.",
+        "status": "todo",
+        "owner": "",
+        "open": true,
+        "source": "checklist"
+      }
+    ],
+    "hardware-deal-tracker": []
+  }
+}

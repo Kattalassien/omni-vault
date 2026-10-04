@@ -1,5 +1,13 @@
 # Vault Changelog (append only, newest first)
 
+## 2026-10-04 (omni hub sync)
+- Added 10-SHARED/: three sharing methods compared, with hub plus managed blocks chosen. Added BRAIN-CORE and AGENTS-CORE blocks, STANDARDS, SKILLS, AGENTS, FEATURES, CONNECTORS, PERPLEXITY-PLAYBOOK, TECH-HARVEST (3+ techniques per repo), and generated BRAIN-ALL / ROADMAP-ALL / NEXT-STEPS.
+- Added scripts/omnisync.py (stdlib; check, harvest, inject, bundle, sql, todoist), tests/test_omnisync.py, and .github/workflows/hub-check.yml.
+- Added 08-CONFIG/projects.json (hub registry with Todoist IDs and Cloudinary cards) and 08-CONFIG/automations.json (three modular automations).
+- Added 06-PROMPTS/PERPLEXITY-OPERATOR-PROMPT.md v2, covering Projects, Skills, Automations, Agents, Model Council, Artifacts and Memory.
+- Added skills/connector-router and skills/omni-hub-sync (source copies of the Perplexity skills).
+- Mirrors: Supabase kb_docs, Drive "Omni Knowledge Hub", Notion "Omni Knowledge Hub", Cloudinary omni-hub/, Todoist "Dev Projects".
+
 ## 2026-10-04 (admin pass)
 - Added BRAIN.md (canonical shared memory, with how-to-use notes), 01-ROADMAP/ROADMAP.md (one-screen view), 08-CONFIG/config.yaml (non-secret IDs, extra games list, connector status), 99-LOG/LOG.md (operations log).
 - Added 09-MASTER-PLANS: MIND-MAP.md, SCHEDULE.md, MASTER-MERGE-PLAN.md (plan 1), TOOL-MASTERY-PLAN.md (plan 2).
