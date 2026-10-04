@@ -22,3 +22,9 @@ Format: `YYYY-MM-DD HH:MM ET | actor | action | result`
 - 03:47 | Computer | Supabase migration kb_mirror (kb_docs, kb_sync_runs, kb_project_summary view, roadmap ref index) on omnitask-portal; advisors show only the same 3 older items | Done
 - 03:48 | Computer | Cloudinary: uploaded omni-hub/hub/omni-hub-diagram and omni-hub/base/card-base; 15 transformation-based project cards return 200 | Done
 - 03:50 | Computer | Added 10-SHARED, omnisync.py (8 tests), hub-check CI, skills, operator prompt v2, automations.json | PR opened, not merged
+- 03:52 | Computer | Supabase kb_docs initial load: 117 docs (361,752 bytes) in 4 chunks; kb_sync_runs row 'manual' | Done
+- 03:53 | Computer | Drive: created "Omni Knowledge Hub" (shared, config, prompts, skills, projects/<slug>) with 49 files; IDs in 08-CONFIG/drive-index.json | Done
+- 03:55 | Computer | Notion: "Omni Knowledge Hub" page under Knowledge OS root, plus the "Omni Projects" database (15 rows) | Done
+- 03:57 | Computer | Perplexity automations: Omni knowledge sync (Sun 20:00), Omni roadmap to Todoist (weekdays 07:30, light), Omni standards audit (1st 08:00, light) | Active
+- 03:58 | Computer | Perplexity skills saved to My Skills: connector-router, omni-hub-sync | Done
+- 03:58 | Computer | CloudConvert: no job run (cost rule: ask first); recipe in skills/connector-router/references/recipes.md | Skipped

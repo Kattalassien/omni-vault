@@ -376,8 +376,8 @@ def cmd_sql(a) -> int:
             "kind=excluded.kind,bytes=excluded.bytes,sha256=excluded.sha256,content=excluded.content,"
             "synced_at=now() where public.kb_docs.sha256 is distinct from excluded.sha256;")
     chunks, cur = [], []
-    for s in stmts:  # keep each file under ~400 KB so connector calls stay small
-        if sum(len(x) for x in cur) + len(s) > 400_000 and cur:
+    for s in stmts:  # keep each file under ~120 KB so connector calls stay small
+        if sum(len(x) for x in cur) + len(s) > 120_000 and cur:
             chunks.append(cur)
             cur = []
         cur.append(s)
