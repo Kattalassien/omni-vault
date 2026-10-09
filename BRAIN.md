@@ -55,6 +55,16 @@ BRAIN.md is the one portable memory that every AI tool reads before working for 
 ## Decisions
 - 2026-10-01: omni-vault is the single vault; Drive is the file archive.
 - 2026-10-04: The four gaming digests were merged into one Daily Gaming Digest at 9:00 AM ET.
+- 2026-10-04: Knowledge is shared with a hub plus managed blocks: omni-vault 10-SHARED, copied into each repo by `scripts/omnisync.py`. Git is the source of truth; Supabase kb_docs, the Drive and Notion "Omni Knowledge Hub" and Todoist are mirrors.
+- 2026-10-04: On Todoist Free, each project is a section of "Dev Projects". Roadmap items sync with an `omni-key:` line for dedupe.
+- 2026-10-04: Stacked PRs are merged top-down (child into parent branch first), or rebased and retargeted to main before merging. Never merge a child after its parent was squash-merged.
+- 2026-10-04: New project planned: a local-first, approval-gated browser automation panel (working name TODO). Plan only; no repo yet. See 99-LOG/LEARNINGS-2026-10-04.md.
 
 ## Facts learned
 <!-- Append dated durable facts here. -->
+- 2026-10-04: Squash-merging a stacked PR into its parent branch does not reach main. omnitask-mobile #9–#11 landed only in their stack branches, and main is still missing PROJECT-STATE.md, CONNECTOR-AUDIT.md, SESSION-HANDOFF.md and ADR-010. A recovery PR (cherry-pick of 5 commits, tested clean) is pending approval.
+- 2026-10-04: omnitask-mobile main got commit 0e7c19b (bidirectional Todoist sync) without a PR. PR #15 quarantines it; merge #15 first.
+- 2026-10-04: llm-knowledge-base was renamed to omnitool-knowledge. GitHub redirects the old URL. The hub slug stays llm-knowledge-base so linked records keep working.
+- 2026-10-04: The red "review" and "code-review" checks are AI reviewers (OpenRouter, GitHub Models) failing without a key or quota. They are not test failures. omnitool-knowledge's reviewer action is unpinned (`@main`).
+- 2026-10-04: Todoist Free limits are reached: project count and saved filters. Supabase project zlxtnknbblgqhdsynjco has only 3 older advisor findings.
+- 2026-10-04: Cloudinary cloud `sewoj1wp` (public name). Project cards are transformation URLs on omni-hub/base/card-base, so nothing is stored per card.
