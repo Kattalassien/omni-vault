@@ -1,0 +1,92 @@
+{
+ "$comment": "Modular Omni automations. Each module is one Perplexity automation that reads this file at run time, so you can change limits here (GitHub mobile) without editing the automation. No secrets.",
+ "version": 1,
+ "updated": "2026-10-04",
+ "defaults": {
+  "timezone": "America/New_York",
+  "never_merge": true,
+  "branch_prefix": "omni/",
+  "pr_label": "omni-sync",
+  "log_file": "99-LOG/LOG.md",
+  "changelog_file": "99-LOG/CHANGELOG.md",
+  "cost_rule": "Free tiers first. Ask before Apify paid runs, Leonardo credits, or more than 1 CloudConvert job per run.",
+  "skills": [
+   "omni-hub-sync",
+   "connector-router"
+  ]
+ },
+ "modules": {
+  "roadmap_to_todoist": {
+   "enabled": true,
+   "cadence": "weekdays 07:30",
+   "mode": "sections",
+   "mode_note": "Todoist Free caps projects, so each project is a section of 'Dev Projects'. Switch to 'projects' after a Pro upgrade.",
+   "hub_project": "Dev Projects",
+   "hub_project_id": "6hgm63rqhWfrP6Mj",
+   "sources": [
+    "repo ROADMAP.md / PLANNEDFEATURES.md via omnisync.py todoist",
+    "Supabase public.roadmap_items (omnitask-portal)"
+   ],
+   "max_open_per_project": 3,
+   "dedupe_by": "omni-key line in task description",
+   "close_when_roadmap_done": true,
+   "owner_labels": {
+    "human": "needs-you",
+    "preston": "needs-you",
+    "computer": "computer",
+    "copilot": "copilot",
+    "claude": "claude"
+   },
+   "always_label": "roadmap",
+   "skip_projects": [
+    "beans-and-roots-website:live-changes"
+   ],
+   "perplexity_automation_id": "11e0aaa6-f26e-4960-a4c2-5f56e126556e",
+   "url": "https://www.perplexity.ai/computer/automations/11e0aaa6-f26e-4960-a4c2-5f56e126556e"
+  },
+  "knowledge_sync": {
+   "enabled": true,
+   "cadence": "Sunday 20:00",
+   "steps": [
+    "harvest",
+    "inject (PR per repo, only when the block changed)",
+    "supabase kb_docs upsert",
+    "drive mirror",
+    "notion hub refresh",
+    "cloudinary card check",
+    "log"
+   ],
+   "inject_targets": [
+    "BRAIN.md",
+    "AGENTS.md"
+   ],
+   "inject_create_missing": false,
+   "max_prs_per_run": 5,
+   "drive_folder": "Omni Knowledge Hub",
+   "notion_page": "Omni Knowledge Hub",
+   "supabase_project": "zlxtnknbblgqhdsynjco",
+   "drive_folder_id": "1Q06oTK_7R5RoIpbbRxwhamQw-bn6pF9x",
+   "drive_index": "08-CONFIG/drive-index.json",
+   "notion_page_id": "3ef6f934-0708-817d-aee3-d685c5706498",
+   "notion_projects_data_source": "collection://e4994b9d-4473-4662-a528-e5f85e9e9ec3",
+   "cloudinary_cloud": "sewoj1wp",
+   "perplexity_automation_id": "d6bb1609-07a9-4454-9386-4a7a36fb024f",
+   "url": "https://www.perplexity.ai/computer/automations/d6bb1609-07a9-4454-9386-4a7a36fb024f"
+  },
+  "standards_audit": {
+   "enabled": true,
+   "cadence": "1st of month 08:00",
+   "checks": [
+    "five operating docs present",
+    "omni core block present and current",
+    "CONTINUE.md updated within 30 days",
+    "open PRs older than 14 days",
+    "Supabase security advisors",
+    "prompt and skill versions match hub"
+   ],
+   "output": "one Todoist task per failing check in the project's section, labelled standard",
+   "perplexity_automation_id": "520352a1-4400-411d-abfd-1d151af58fc1",
+   "url": "https://www.perplexity.ai/computer/automations/520352a1-4400-411d-abfd-1d151af58fc1"
+  }
+ }
+}
