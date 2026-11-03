@@ -1,5 +1,9 @@
 # Vault Changelog (append only, newest first)
 
+## 2026-11-03
+- Replaced the broken issue-summary workflow with a deterministic, secret-free intake comment.
+- Removed retired GitHub Models and malformed pasted action configuration from issue triage.
+
 ## 2026-10-04 (omni hub sync)
 - Added 10-SHARED/: three sharing methods compared, with hub plus managed blocks chosen. Added BRAIN-CORE and AGENTS-CORE blocks, STANDARDS, SKILLS, AGENTS, FEATURES, CONNECTORS, PERPLEXITY-PLAYBOOK, TECH-HARVEST (3+ techniques per repo), and generated BRAIN-ALL / ROADMAP-ALL / NEXT-STEPS.
 - Added scripts/omnisync.py (stdlib; check, harvest, inject, bundle, sql, todoist), tests/test_omnisync.py, and .github/workflows/hub-check.yml.
